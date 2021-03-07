@@ -16,3 +16,14 @@ Notes: When creating smart contracts, the constructor function will automaticall
 
 When reading data from the contract no cost is incurred. I.e. .call() is used
 When altering/updating data in a smart contract, a cost is incurred on the account address specified in the send function. I.e. .send({ from: accAddress})
+
+
+# Deploying to Rinkbey Network & Interaction
+Node ------ |                                                         #Web3
+            |                                                           |
+        Infura Node  -> Infura API -> Provider - > web3 instance (Instantiated Web3)
+            |                            |
+Node -------|                       Account Mnemonic
+
+# Provider needs real account with real "Fake" ether to deploy: MetaMask
+Ganache -> Provider -> web3 instance (Instantiated from Web3 constructer)
